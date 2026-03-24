@@ -96,7 +96,7 @@ export default function OrderConfirmationPage() {
           )}
 
           {/* Order Summary */}
-          <div className="mb-6">
+          {/* <div className="mb-6">
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Order Summary</h3>
             <div className="space-y-4">
               {cart.length === 0 ? (
@@ -123,7 +123,7 @@ export default function OrderConfirmationPage() {
                 ))
               )}
             </div>
-          </div>
+          </div> */}
 
           {/* Total */}
           {cart.length > 0 && (
@@ -137,7 +137,7 @@ export default function OrderConfirmationPage() {
         </div>
 
         {/* Next Steps */}
-        <div className="bg-blue-50 rounded-lg p-6 mb-8">
+        {/* <div className="bg-blue-50 rounded-lg p-6 mb-8">
           <h3 className="text-lg font-semibold text-blue-900 mb-4">What's Next?</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="text-center">
@@ -168,7 +168,7 @@ export default function OrderConfirmationPage() {
               <p className="text-sm text-blue-700">Estimated delivery in 3-5 business days</p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Action Buttons */}
         <div className="text-center space-x-4">

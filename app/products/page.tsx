@@ -280,23 +280,24 @@ export default function ProductsPage() {
                   </div>
                 </div>
 
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between py-3">
                   <div>
                     <p className="text-2xl font-bold text-green-600">
                       ₹{product.price.toLocaleString('en-IN')}
                     </p>
                     <p className="text-xs text-gray-500">Starting Price</p>
                   </div>
-                  <Link
+                  
+                </div>
+                <Link
                     href={`/products/${product.id}`}
-                    className="inline-flex items-center gap-2 bg-linear-to-r from-blue-200 to-blue-500 text-white px-8 py-3 rounded-lg font-medium hover:from-blue-700 hover:to-blue-800 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
+                    className="inline-flex items-center justify-between gap-2 bg-linear-to-r from-blue-200 to-blue-500 text-white px-8 py-3 rounded-lg font-medium hover:from-blue-700 hover:to-blue-800 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
                   >
                     View Details
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-2 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </Link>
-                </div>
               </div>
             </div>
           ))}

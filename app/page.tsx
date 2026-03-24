@@ -51,11 +51,13 @@ export default function Home() {
                       {product.type}
                     </div>
                   </div>
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between py-3">
                     <p className="text-2xl font-bold text-green-600">
                       ₹{product.price.toLocaleString('en-IN')}
                     </p>
-                    <Link
+                    
+                  </div>
+                  <Link
                       href={`/products/${product.id}`}
                       className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-3 rounded-lg font-medium hover:from-blue-700 hover:to-blue-800 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
                     >
@@ -64,7 +66,6 @@ export default function Home() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
                     </Link>
-                  </div>
                 </div>
               </div>
             ))}
